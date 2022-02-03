@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scss/main.css">
+    <title>Trabaja con nosotras</title>
+</head>
+<body>
+  <div class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand"><img class="header__logo" src="../images/lila.JPG"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nuestra_historia.html">Nosotras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./noticias.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./galeria.html">Galería</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contacto
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./contacto.html">Contáctanos</a></li>
+                  <li><a class="dropdown-item" href="./trabaja_con_nosotras.html">Trabaja con nosotras</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Escribe aquí" aria-label="Search">
+              <button class="btn btn-outline-success boton" type="submit">Búsqueda</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+        <h1 class="titulo-semi-grande texto-centrado">¡Trabaja con nosotras!</h1>
+</div>
+
+    <section id="subtitulo" class="texto-centrado">
+        <p>
+            <h4>Déjanos tus datos y cuéntanos por qué te gustaría trabajar con nosotras.</h4></p>
+
+    <section id="form" class="texto-centrado">
+    <form action="contacto.php" method="GET" enctype="application/x-www-form-urlencoded">
+        <div>
+            <label for="nombre">Nombre</label>
+        </div>
+         <input type="text" name= "nombre">
+        <br>
+        <div>
+            <label for="correo">Corre electrónico</label>
+        </div>
+        <input type="email" name="correo">
+        <br>
+    <section>
+        <div>
+            <label for="profesion">Profesión</label>
+        </div>
+    <select name="profesion">
+    <option value="starter" hidden>Selecciona tu profesión</option>
+    <option value="periodista">Periodista</option>
+    <option value="diseñadora">Diseñadora</option>
+    <option value="programadora">Programadora</option>
+    <option value="ingniera">Ingeniera</option>
+    <option value="otra">Otra</option>
+    </select>
+    <br>
+    </section>
+    <div> 
+        <label for="nombre">Cuéntanos por qué te gustaría trabajar con nosotras</label>
+    </div>
+         <textarea name="Historia" id="" cols="50" rows="10"></textarea>
+    <br>
+    <input class="boton" type="submit" value="Enviar">
+    <input class="boton" type="reset" value="Borrar">
+    </form>
+    </section>
+    </nav>
+<footer> 
+    <img src="../images/02 FOOTER MailingSandraConejeros-02.jpg" alt="footer" width="1100" class="texto-centrado">
+</footer>
+</div>
+<script src="../js/bootstrap.js"></script>
+</body>
+
+</html>
