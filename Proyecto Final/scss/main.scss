@@ -223,6 +223,7 @@ table {color: rgb(19, 18, 19);
 
 .caja-noticias{
     width: 30rem;
+    height: 50rem;
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 40px;
@@ -231,10 +232,9 @@ table {color: rgb(19, 18, 19);
     background-color: #904C77;
     color: white;
     position:relative;
-    top: 10x;
-    bottom: 10px;
     float: inline-end;
     flex-direction: row;
+    align-items: center;
 }
 
 .caja-meses{
