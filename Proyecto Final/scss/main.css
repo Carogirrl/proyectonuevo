@@ -22,6 +22,7 @@
 .header__logo:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+          position: absolute;
 }
 
 .header__list {
@@ -233,7 +234,7 @@ table {
 }
 
 .caja {
-  width: 70rem;
+
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 35px;
@@ -256,13 +257,10 @@ table {
   padding-right: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
-  margin: 10px;
+  margin: 20px;
   background-color: #904C77;
   color: white;
   position: relative;
-  top: 10x;
-  bottom: 10px;
-  float: inline-end;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -352,9 +350,12 @@ table {
   display: grid;
   -ms-grid-columns: 70% 30%;
       grid-template-columns: 70% 30%;
-  -ms-grid-rows: (auto)[6];
-      grid-template-rows: repeat(6, auto);
-      grid-template-areas: "header header" "productos productos" "servicios publicidad" "spotify publicidad" "feedback feedback" "footer footer";
+-ms-grid-rows: (auto)[6];
+grid-template-rows: repeat(6, auto);
+grid-template-areas: "servicios publicidad"
+"spotify publicidad"
+"feedback feedback"
+"footer footer";
 }
 
 .border {
@@ -416,7 +417,11 @@ section#feedback {
   -ms-grid-rows: (auto)[5];
       grid-template-rows: repeat(5, auto);
   margin: 20px;
-      grid-template-areas: "header header" "titulo titulo" "subtitulo subtitulo" "form form" "footer footer";
+      grid-template-areas: "header header"
+ "titulo titulo"
+ "subtitulo subtitulo"
+ "form form"
+ "footer footer";
 }
 
 header {
