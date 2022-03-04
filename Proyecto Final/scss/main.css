@@ -22,7 +22,6 @@
 .header__logo:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-          position: absolute;
 }
 
 .header__list {
@@ -70,6 +69,10 @@
   border: black;
 }
 
+h1{
+  font-size: 4rem;
+}
+
 .tarjeta {
   margin-left: 100px;
   -webkit-box-align: center;
@@ -84,7 +87,7 @@
   text-align: center;
   background-color: crimson;
   margin: 40px;
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
   padding: 30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -239,6 +242,7 @@ table {
   padding-right: 30px;
   padding-top: 35px;
   padding-bottom: 30px;
+  font-size: 2rem;
   margin: 50px;
   background-color: #904C77;
   color: white;
@@ -255,11 +259,12 @@ table {
   width: 30rem;
   padding-left: 40px;
   padding-right: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 60px;
   margin: 20px;
   background-color: #904C77;
   color: white;
+  text-align: center;
   position: relative;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
