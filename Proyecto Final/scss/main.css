@@ -18,6 +18,9 @@ html{
   font-size: 1.5rem;
 }
 
+
+
+
 /*I*/
 .header {
   font-weight: normal;
@@ -129,6 +132,7 @@ body {
 h1 {
   color: #904C77;
   margin: 80px;
+  text-decoration: double;
   letter-spacing: 2px;
   -webkit-text-decoration-style: none;
           text-decoration-style: none;
@@ -215,9 +219,10 @@ table {
 /*usado*/
 .texto-centrado {
   text-align: center;
-  margin: 20px;
   padding: 10px;
 }
+
+
 
 
 
@@ -546,10 +551,10 @@ section#form {
   animation-direction: alternate-reverse;
 }
 
+
 /*MEDIA QUERIE*/
 @media only screen and (max-width: 768px) {
   body {
-    background-color: cornflowerblue;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -562,7 +567,6 @@ section#form {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: coral;
   }
   ul {
     -ms-flex-wrap: wrap;
@@ -597,4 +601,47 @@ section#form {
   color: white;
   border-color: transparent;
 }
+
+
+
+
+/*Screen sizes*/
+
+$sm: 991px;
+$md: 1200px;
+$lg: 1400px;
+
+
+@mixin breakpoint($class) {
+    @if $class == sm {
+      @media (max-width: $sm) { @content; }
+    }
+    
+    @else if $class == md {
+      @media (max-width: $md) { @content; }
+    }
+    @else if $class == lg {
+      @media (max-width: $lg) { @content; }
+    }
+  }
+
+  @include breakpoint(md) {
+    .navbar {
+      font-size: 2rem;
+    }
+
+   @include breakpoint(sm) {
+    .navbar {
+        font-size: 1.5rem;
+        }
+
+  @include breakpoint(sm) {
+    .navbar {
+        font-size: 1rem;
+            }
+  }
+
+
+
+
 /*# sourceMappingURL=main.css.map */
